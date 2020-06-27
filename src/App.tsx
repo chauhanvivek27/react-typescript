@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { default as Message1 }   from './Detail';
+import Example from './Count'
+import FetchApi from './FetchData'
 
 function App() {
   return (
@@ -10,14 +13,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+         <Message1 text="Nice example" />
+         <Example />
+         <FetchApi />
       </header>
     </div>
   );
