@@ -1,0 +1,14 @@
+$blockName: '.grid-layout';
+
+#{$blockName} {
+    &_content {
+        a {
+            width: 10px;
+            font-size: 1.0rem;
+            font-family: Arial, Helvetica, sans-serif;
+            &:link {
+                color: black;
+            }
+        }
+    }
+}

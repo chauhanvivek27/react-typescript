@@ -1,19 +1,15 @@
 import React from 'react';
 import './App.css';
-import { default as Message1 }   from './Detail';
-import Example from './Count'
 import FetchApi from './FetchDataLoading'
 
-function App() {
+function Start() {
   return (
     <div className="App">
       <header className="App-header">
-         <Message1 text="Nice example" />
-         <Example />
          <FetchApi />
       </header>
     </div>
   );
 }
 
-export default App;
+export default Start;
