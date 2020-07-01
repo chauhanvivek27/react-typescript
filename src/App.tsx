@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { default as Message1 }   from './Detail';
 import Example from './Count'
-import FetchApi from './FetchDataLoading'
+import FetchApi from './CustomHookDataFetch'
 
 function App() {
   return (

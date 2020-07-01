@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const UseFetch = () => {
+const useFetch = () => {
 const [data , setData] =  useState<any[]>([]);
 const [search, setSearch] = useState('redux');
 const [isLoading, setIsLoading] = useState(false);
@@ -23,9 +23,9 @@ useEffect(() => {
     promise();
 }, [search]);
 
-return [{ data, isLoading, isError }, setSearch];
+return [ data, isLoading, isError, setSearch ] as const;
 
 }
 
-export default UseFetch;
+export default useFetch;
 
