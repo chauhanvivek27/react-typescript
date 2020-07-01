@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
-const useFetch = () => {
+const useFetch = (initialSearchTxt: any) => {
 const [data , setData] =  useState<any[]>([]);
-const [search, setSearch] = useState('redux');
+const [search, setSearch] = useState(initialSearchTxt);
 const [isLoading, setIsLoading] = useState(false);
 const [isError, setIsError] = useState(false);
 
@@ -16,7 +16,7 @@ useEffect(() => {
         setIsLoading(false);
       }
       catch(ex) {
-        setIsError(true);
+        setIsError(true); 
         setIsLoading(false);
       }          
     };

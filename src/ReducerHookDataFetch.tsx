@@ -3,12 +3,12 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import SpacingGrid from './component/grid';
-import useFetch from './UseFetch';
+import useReducerFetch from './UseReducerHook';
 
 function FetchApi() {
     const [query , setQuery] = useState('');
-    const [data, isLoading, isError, setSearch] = useFetch('redux');   
-
+    const [{ data, isLoading, isError }, setSearch] = useReducerFetch('redux');   
+    console.log('data', data);
     return (
         <Fragment>
           <TextField 
