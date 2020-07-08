@@ -2,8 +2,8 @@ import React, { useState, useEffect, Fragment } from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
-function FetchApi() {
-    const [data , setData] =  useState<any[]>([]);
+function FetchApi(): JSX.Element {
+    const [data , setData] =  useState<Array>([]);
     const [query , setQuery] = useState('');
     const [search, setSearch] = useState('redux');
 

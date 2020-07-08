@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 
-export default function Example() {
+export default function Example(): JSX.Element {
     const [count, setCount] = useState(0);
     const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
 

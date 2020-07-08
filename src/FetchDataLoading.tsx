@@ -5,7 +5,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import SpacingGrid from './component/grid';
 
 
-function FetchApi() {
+function FetchApi(): JSX.Element {
     const [data , setData] =  useState<any[]>([]);
     const [query , setQuery] = useState('');
     const [search, setSearch] = useState('redux');
